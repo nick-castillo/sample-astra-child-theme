@@ -1,0 +1,44 @@
+.ast-button,
+a.ast-button {
+  padding: .8rem 1rem !important;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  border-radius: .8rem;
+  text-decoration: none;
+
+  &.ast-btn-primary {
+    color: var(--white-colour);
+    background-color: var(--secondary-colour);
+    border: .2rem solid var(--secondary-colour);
+
+    &:hover {
+      border-color: var(--secondary-colour-30);
+      background-color: var(--secondary-colour-30);
+    }
+  }
+
+  &.ast-btn-secondary {
+    color: var(--secondary-colour);
+    background-color: var(--white-colour);
+    border: .2rem solid var(--secondary-colour-10);
+
+    &:hover {
+      color: var(--white-colour);
+      background-color: var(--secondary-colour-30);
+      border-color: var(--secondary-colour-30);
+    }
+  }
+}
+
+
+.acf-button.button.button-primary {
+  padding: .8rem 1rem !important;
+  color: #fff;
+}
+
+.edit-post-visual-editor .ast-button,
+.edit-post-visual-editor .button,
+.edit-post-visual-editor input[type="button"],
+.edit-post-visual-editor input[type="submit"] {
+  padding: .8rem 1rem !important;
+}

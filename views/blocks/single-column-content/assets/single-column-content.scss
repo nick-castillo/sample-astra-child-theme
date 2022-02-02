@@ -1,0 +1,24 @@
+.single-column-content-block {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+
+  .block-content {
+    &.bg-white { background-color: #fff; }
+
+    &.bg-dark { background-color: #f1f5f7; }
+
+    &.bg--on-col {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: transparent;
+
+      .ast-row {
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        background-color: #f1f5f7;
+      }
+    }
+  }
+}

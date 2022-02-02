@@ -1,0 +1,129 @@
+// Mixins
+//
+// For writing helper mixins
+
+// Reset List
+@mixin reset-lists{
+  list-style-type: none;
+  outline: none;
+}
+/****** end of reset lists ********/
+
+// Reset BTN to default
+@mixin reset-btn {
+  box-shadow: none;
+  border: none;
+  text-shadow: none;
+  outline: none;
+}
+/****** end of reset btn ********/
+
+
+// Buttons
+@mixin btn-outline( $border-color, $text-color, $hover-btn-color, $hover-text-color ) {
+  border: 1px solid $border-color;
+  padding: .65rem 1rem;
+  text-decoration: none;
+  color: $text-color;
+
+  @media screen and ( min-width: 64em ) {
+    transition: all .2s linear;
+
+    &:hover {
+      background-color: $hover-btn-color;
+      color: $hover-text-color;
+      text-decoration: none;
+      transition: all .2s linear;
+    }
+  } //64em
+} // btn-outline
+
+@mixin btn-filled( $bg-color, $text-color, $bg-hover-color, $bg-hover-text ) {
+  background-color: $bg-color;
+  padding: .65rem 1rem;
+  color: $text-color;
+  text-decoration: none;
+
+  @media screen and ( min-width: 64em ) {
+    transition: all .2s linear;
+
+    &:hover {
+      background-color: $bg-hover-color;
+      color: $bg-hover-text;
+      text-decoration: none;
+      transition: all .2s linear;
+    }
+  } //64em
+} // btn-filled
+/****** end of Buttons ********/
+
+// Backgrounds
+@mixin bg-default {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@mixin bg-custom( $bg-size, $bg-repeat, $bg-x, $bg-y ) {
+  background-size: $bg-size;
+  background-repeat: $bg-repeat;
+  background-position: $bg-x $bg-y;
+}
+/****** end of Backgrounds ********/
+
+// Display Flex
+@mixin display-flex( $direction, $justify ) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+/****** end of Display Flex ********/
+
+//Media Query
+@mixin media-breakpoint-up( $screen ) {
+  @if $screen=="sm" {
+    @media only screen and ( min-width: $sm-screen ) {
+      @content;
+    }
+  } @else if $screen=="md" {
+    @media only screen and ( min-width: $md-screen ) {
+      @content;
+    }
+  } @else if $screen=="lg" {
+    @media only screen and ( min-width: $lg-screen ) {
+      @content;
+    }
+  } @else if $screen=="xl" {
+    @media only screen and ( min-width: $xl-screen ) {
+      @content;
+    }
+  } @else {
+    @media only screen and ( min-width: $screen ) {
+      @content;
+    }
+  }
+}
+
+// @mixin media-breakpoint-up( $point ) {
+//   @if $point=="sm" {
+//     @media only screen and ( min-width: $sm-screen ) {
+//       @content;
+//     }
+//   } @else if $point=="md" {
+//     @media only screen and ( min-width: $md-screen ) {
+//       @content;
+//     }
+//   } @else if $point=="lg" {
+//     @media only screen and ( min-width: $lg-screen ) {
+//       @content;
+//     }
+//   } @else if $point=="xl" {
+//     @media only screen and ( min-width: $xl-screen ) {
+//       @content;
+//     }
+//   } @else {
+//     @media only screen and ( min-width: $point ) {
+//       @content;
+//     }
+//   }
+// }

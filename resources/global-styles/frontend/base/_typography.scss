@@ -1,0 +1,220 @@
+/**
+ * Base type styles.
+ */
+
+body {
+  font-family: var(--font-tertiary);
+  font-weight: var(--font-regular);
+  color: var(--text-colour);
+}
+
+// Margin Top Calculation: (design-value) - 16px
+// All elements have margin bottom of 16px
+// base-line: 1.6
+// line-height: baseline-height * font-size
+// margin top & bottom: line-height / font-size
+
+h1,
+.heading-one,
+.entry-content h1,
+.entry-title h1,
+.entry-content .heading-one {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+h2,
+.heading-two,
+.entry-content h2,
+.entry-content .heading-two {
+  margin-top: 1.14rem;
+  margin-bottom: 1.14rem;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  text-transform: uppercase;
+}
+
+h3,
+.heading-three,
+.entry-content h3,
+.entry-content .heading-three {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+}
+
+h4,
+.heading-four,
+.entry-content h4,
+.entry-content .heading-four {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+
+h5,
+.heading-five,
+.entry-content h5,
+.entry-content .heading-five {
+  margin-top: 1.33rem;
+  margin-bottom: 1.33rem;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+h6,
+.heading-six,
+.entry-content h6,
+.entry-content .heading-six {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.heading-one,
+.heading-two,
+.heading-three,
+.heading-four {
+  color: darks('40');
+  font-family: var(--font-primary);
+  font-style: normal;
+}
+
+h5,
+h6,
+.entry-content h5,
+.entry-content h6,
+.heading-five,
+.heading-six {
+  color: darks('40');
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: var(--font-regular);
+}
+
+p,
+a,
+li,
+ol,
+div,
+span,
+label,
+input,
+bdi,
+th,
+td,
+textarea,
+.entry-content p,
+.entry-content a,
+.entry-content li,
+.entry-content ol,
+.entry-content div,
+.entry-content span,
+.entry-content label,
+.entry-content input,
+.entry-content bdi,
+.entry-content th,
+.entry-content td,
+.entry-content textarea,
+.entry-meta p,
+.entry-meta a,
+.entry-meta li,
+.entry-meta ol,
+.entry-meta div,
+.entry-meta span,
+.entry-meta label,
+.entry-meta input,
+.entry-meta bdi,
+.entry-meta th,
+.entry-meta td,
+.entry-meta textarea {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: text-colors('40');
+  font-style: normal;
+}
+
+ul,
+ol,
+p,
+.entry-content ul,
+.entry-content ol,
+.entry-content p {
+  margin-top: 1.63rem;
+  margin-bottom: 1.63rem;
+}
+
+ul,
+ol,
+.entry-content ul,
+.entry-content ol {
+  margin-left: 1.6rem;
+}
+
+.overline {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  // font-size: 1rem;
+  // line-height: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-bold);
+}
+
+p.overline,
+.entry-content p.overline
+span.overline,
+.entry-content span.overline,
+div.overline,
+.entry-content div.overline {
+  color: var(--secondary-colour);
+}
+
+
+.body-small {
+  margin-top: 1.86rem;
+  margin-bottom: 1.86rem;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+strong { font-weight: $font-bold; }
+
+a,
+.entry-content a,
+.entry-meta a {
+  color: var(--links-colour);
+  font-weight: var(--font-bold);
+  text-decoration: underline;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1.6rem;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 1.6rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 1.6rem;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 1.6rem;
+}

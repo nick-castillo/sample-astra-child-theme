@@ -1,0 +1,1 @@
+import './full-width-image.scss';

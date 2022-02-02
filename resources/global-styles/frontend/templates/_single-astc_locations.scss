@@ -1,0 +1,53 @@
+.single-astc_locations {
+
+  .team-member__meta span {
+    display: block;
+  }
+
+  h2,
+  .location-name {
+    margin-bottom: 1.6rem;
+  }
+
+  .location-info {
+    margin: 0;
+  }
+
+  .location-info__hours-container {
+    margin-top: 1.6rem;
+
+    p {
+      margin-top: .4rem;
+      margin-bottom: .4rem;
+    }
+  }
+
+  .two-column-content-block.two-column-content-block--dark {
+    margin-top: 9.6rem;
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .block-content__media {
+      margin-top: -9.6rem;
+    }
+
+    .block-content { order: 1; }
+  }
+
+  @media screen and (min-width: 992px) {
+    .two-column-content-block.two-column-content-block--dark {
+      margin-top: 12rem;
+
+      .main-content { flex-direction: row; }
+
+      .block-content { order: 0; }
+
+      &.two-column-content-block--reverse {
+        .block-content { order: 1; }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.two-column-content-block {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+
+  &.two-column-content-block--dark {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .ast-row { background-color: #f1f5f7; }
+  }
+
+  .ast-row {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .block-content {
+    margin-bottom: 2.4rem;
+  }
+
+  .block-content__media,
+  .block-content__media p,
+  .block-content__media iframe,
+  .block-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3.2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .block-content { padding-right: 4rem; }
+
+    &.two-column-content-block--reverse {
+      .block-content {
+        order: 2;
+        padding-right: 0;
+        padding-left: 4rem;
+      }
+    }
+  }
+}

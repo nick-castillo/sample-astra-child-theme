@@ -1,0 +1,80 @@
+.header-topbar {
+  .search-bar { display: none; }
+
+  .annoucement {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    text-align: center;
+    background-color: var(--secondary-colour);
+
+    .annoucement_message {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: var(--font-regular);
+      text-decoration: none;
+      color: var(--white-colour);
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    position: relative;
+
+    .search-bar__toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 3.9rem;
+      border-radius: 0vh;
+      padding-right: 2.4rem;
+      padding-left: 2.4rem;
+      background-color: var(--text-colour-30);
+    }
+
+    .search-bar__form__submit {
+      position: fixed;
+      left: -200%;
+    }
+
+    .search-bar__form__field {
+      width: 100%;
+      padding: 2rem 5.5rem;
+      background-color: transparent;
+      border: 0;
+      color: var(--white-colour);
+      transition: all .3s ease;
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--white-colour);
+        opacity: 1; /* Firefox */
+      }
+
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: var(--white-colour);
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: var(--white-colour);
+      }
+
+      &:focus {
+        border: 0;
+        color: var(--white-colour);
+        background-color: transparent;
+      }
+
+    }
+
+    .search-bar__form {
+      visibility: collapse;
+      height: 0;
+      background-color: var(--text-colour-30);
+
+      &.visible {
+        visibility: visible;
+        height: auto;
+      }
+    }
+
+    .search-bar { display: block; }
+  }
+}

@@ -1,0 +1,1 @@
+import './location-banner.scss';

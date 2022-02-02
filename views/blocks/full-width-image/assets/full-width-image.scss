@@ -1,0 +1,35 @@
+.full-width-image-block {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  &.full-width-image-block--bg-dark {
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    background-color: #dfe3e9;
+  }
+
+  .full-width-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3.2rem;
+    transition: all .3s ease;
+  }
+
+  .full-width-image__desktop { display: none; }
+
+  .full-width-image__container--link {
+    &:hover {
+      .full-width-image {
+        box-shadow: 0 0 16px -4px rgba(14, 5, 3, 0.84);
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px ) {
+    .full-width-image__desktop { display: block; }
+    .full-width-image__mobile { display: none; }
+  }
+}

@@ -1,0 +1,121 @@
+.testimonials-block {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  .testimonial__content,
+  .testimonial {
+    border-radius: 2.4rem;
+  }
+
+  .testimonial {
+    padding: 1rem 1.4rem;
+    background-color: var(--accent-grey-colour-20);
+    // box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, .25);
+  }
+
+  .testimonail-header__title { color: var(--text-colour-20); }
+
+  .testimonial__name { color: var(--text-colour-30); }
+
+  .testimonial__content {
+    border: .1rem solid var(--secondary-colour-10);
+    padding: 4rem 2.4rem;
+  }
+
+  .testimonial-header {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 4rem;
+      display: block;
+      width: 22rem;
+      height: 19rem;
+      background-image: url('../assets/img/quote-bg.svg');
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  .testimonials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 4rem 0 0;
+    list-style-type: none;
+  }
+
+  .slick-list {
+    width: 100%;
+    order: 0;
+  }
+
+  .slick-arrow {
+    order: 1;
+    font-size: 0;
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    margin-top: 1.6rem;
+    background-color: transparent;
+
+    &:before {
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: '';
+    }
+  }
+
+  .slick-prev {
+    &::before {
+      background-image: url('../assets/img/arrow-left.svg');
+    }
+  }
+
+  .slick-next {
+    margin-left: .8rem;
+
+    &::before {
+      background-image: url('../assets/img/arrow-right.svg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+   .ast-col-xs-12 {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+   }
+
+   .testimonials {
+     width: 55%;
+     margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .testimonial-header {
+      &:before { right: 7.2rem; }
+    }
+  }
+}
+
+.wp-admin .testimonials-block {
+  .testimonial-header {
+    &:before { right: 0; }
+  }
+
+  .testimonial {
+    display: none;
+
+    &:first-child { display: block; }
+  }
+}

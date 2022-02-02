@@ -1,0 +1,1 @@
+import './primary-header.scss';

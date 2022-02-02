@@ -1,0 +1,1 @@
+{"version":3,"sources":["global-styles/admin/_gutenberg-editor.scss"],"names":[],"mappings":"AAAA,gBACE","file":"_gutenberg-editor.css","sourceRoot":"../resources","sourcesContent":[".acf-block-body {\n  border: 1px solid #eee;\n}\n"]}

@@ -1,0 +1,44 @@
+// Strip unit
+@function strip-unit( $number ) {
+  @if type-of( $number ) == "number" and not unitless( $number ) {
+    @return $number / ( $number * 0 + 1 );
+  }
+
+  @return $number;
+}
+
+// Convert PX to rem
+@function px2rem( $pixel-value, $base-font-size: 10 ) {
+  @return 1 / strip-unit( $base-font-size ) * strip-unit( $pixel-value ) * 1rem;
+}
+
+@function primary-color($shade: '40') {
+  @return get-theme-color($primary-colors, $shade);
+}
+
+@function secondary-color($shade: '40') {
+  @return get-theme-color($secondary-colors, $shade);
+}
+
+@function greys($shade: '40') {
+  @return get-theme-color($greys, $shade);
+}
+
+@function darks($shade: '40') {
+  @return get-theme-color($darks, $shade);
+}
+
+@function text-colors($shade: '40') {
+  @return get-theme-color($text-colors, $shade);
+}
+
+@function get-theme-color($theme-colors, $theme-color-shade) {
+  $theme-color: map-get($theme-colors, '40'); // base color
+
+  @if map-has-key($theme-colors, $theme-color-shade) {
+    $theme-color: map-get($theme-colors, $theme-color-shade);
+  }
+
+  @return $theme-color;
+}
+

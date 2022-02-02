@@ -1,0 +1,86 @@
+.gform_legacy_markup_wrapper .gform_footer,
+.gform_footer {
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gform_legacy_markup_wrapper div.validation_error,
+.gform_validation_errors {
+  border-color: var(--secondary-colour);
+  border-width: .1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.gform_validation_errors > h2 {
+  font-weight: var(--font-regular);
+  color: var(--secondary-colour);
+
+  &::before { display: none; }
+}
+
+.gfield {
+  padding-right: 0 !important;
+
+  label.gfield_label {
+    font-weight: var(--font-normal);
+  }
+
+  input,
+  select {
+    background-color: #FAFCFE;
+    height: 3.37em !important;
+    border-radius: .5em !important;
+    padding: 16px 12px !important;
+    border: .1rem solid var(--accent-grey-colour);
+    box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
+
+    &:focus {
+      border: 1px solid black !important;
+    }
+  }
+
+  div textarea {
+    background-color: rgb(255, 239, 210) !important;
+    border-radius: .5em !important;
+    padding: 16px 12px !important;
+    border: none !important;
+  }
+
+  &.gfield_error {
+    border: 0 !important;
+    background-color: transparent !important;
+
+    .validation_message { padding-top: .4rem; }
+
+    .validation_message,
+    .gfield_label {
+      color: var(--secondary-colour);
+    }
+
+    input { border-color: var(--secondary-colour-20) !important; }
+  }
+}
+
+input[type=submit].gform_button,
+input[type=submit] {
+  width: 100% !important;
+  border-radius: .8rem;
+  border: .2rem solid var(--secondary-colour);
+  padding: 1.2rem 2.4rem;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  color: var(--white-colour);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  background-color: var(--secondary-colour);
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    border-color: var(--secondary-colour-30);
+    background-color: var(--secondary-colour-30);
+  }
+}

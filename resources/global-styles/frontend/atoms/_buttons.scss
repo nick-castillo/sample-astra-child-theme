@@ -1,0 +1,33 @@
+.ast-button,
+a.ast-button {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  border-radius: .8rem;
+  text-decoration: none;
+
+  &.ast-btn-primary {
+    color: var(--white-colour);
+    background-color: var(--secondary-colour);
+    border: .2rem solid var(--secondary-colour);
+
+    &:hover {
+      border-color: var(--secondary-colour-30);
+      background-color: var(--secondary-colour-30);
+    }
+  }
+
+  &.ast-btn-secondary {
+    color: var(--secondary-colour);
+    background-color: transparent;
+    border: .2rem solid var(--secondary-colour-10);
+
+    &:hover {
+      color: var(--white-colour);
+      background-color: var(--secondary-colour-30);
+      border-color: var(--secondary-colour-30);
+    }
+  }
+}

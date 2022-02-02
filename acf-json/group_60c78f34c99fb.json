@@ -1,0 +1,126 @@
+{
+    "key": "group_60c78f34c99fb",
+    "title": "Block - Weekly feature cards",
+    "fields": [
+        {
+            "key": "field_60c78f416d1f0",
+            "label": "Weekly feature cards",
+            "name": "weekly_feature_cards",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add a weekly feature",
+            "sub_fields": [
+                {
+                    "key": "field_60c78f586d1f1",
+                    "label": "Weekly feature card",
+                    "name": "weekly_feature_card",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60c78f716d1f2",
+                            "label": "Weekly feature post",
+                            "name": "weekly_feature_post",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "astc_weekly_features"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_60c78f836d1f3",
+                            "label": "Would you like to add a CTA link on the card",
+                            "name": "card_has_cta",
+                            "type": "true_false",
+                            "instructions": "Check this box to add a button link on the weekly feature card.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_60c78fa46d1f4",
+                            "label": "Feature card CTA",
+                            "name": "feature_card_cta",
+                            "type": "link",
+                            "instructions": "Add a CTA link to the feature card.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_60c78f836d1f3",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/weekly-feature-cards"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1623691216
+}

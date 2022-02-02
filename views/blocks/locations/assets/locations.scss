@@ -1,0 +1,14 @@
+.locations-block {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+
+  .location-card {
+    margin-top: 4rem;
+
+    .location-card__ctas { margin-left: 0; }
+
+    .location-card__cta .ast-button {
+      margin-bottom: 1rem;
+    }
+  }
+}

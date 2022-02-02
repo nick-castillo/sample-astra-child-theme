@@ -1,0 +1,1 @@
+import './astrachild-instagram.scss';

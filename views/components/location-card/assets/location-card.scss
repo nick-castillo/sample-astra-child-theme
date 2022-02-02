@@ -1,0 +1,67 @@
+.location-card {
+  .locations { margin-left: 0 }
+
+  .location-card__ctas { list-style: none; }
+
+  .location-card__cta .ast-button {
+    display: block;
+    max-width: 24rem;
+    text-align: center;
+  }
+
+  .location-card__meta-info--phone-numbers{
+    display: flex;
+    flex-direction: row;
+
+    .location-card__tel-number {
+      margin-right: 4rem;
+    }
+  }
+
+  .location-card__img { display: none; }
+}
+
+@media screen and (min-width: 768px) {
+  .location-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .location-card__cta .ast-button {
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .location-card {
+    .location-card__img {
+      display: block;
+      width: 32%;
+    }
+
+    .location-card__info {
+      width: 48%;
+      margin-left: 1rem;
+    }
+
+    .location-card__ctas { width: 24rem; }
+  }
+
+}
+
+@media screen and (min-width: 1227px) {
+    .location-card{
+      .location-card__img {
+        display: block;
+        width: 32%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .location-card__info { width: 48%; }
+      .location-card__ctas { width: 20%; }
+    }
+}

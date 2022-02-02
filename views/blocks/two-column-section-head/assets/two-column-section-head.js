@@ -1,0 +1,1 @@
+import './two-column-section-head.scss';

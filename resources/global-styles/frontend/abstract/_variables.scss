@@ -1,0 +1,66 @@
+/**
+ * Any shared variables between your bundles.
+ */
+
+$grid-gutter-width: 40px !default;
+
+$sm-screen: 576px;
+$md-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1200px;
+
+$font-primary: 'knockout', Helvetica, Arial, sans-serif;
+$font-secondary: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-bold: 700;
+$font-semi-bold: 600;
+$font-regular: 400;
+
+$black: #000;
+$white: #fafcfe;
+
+$theme-black: $black;
+$theme-white: $white;
+
+$error  : #ef3c00;
+$warning: #ffcc01;
+$success: #31d0aa;
+
+$box-shadow: 4px 4px 5px -2px rgba(0, 0, 0, .2);
+
+$primary-colors: (
+  '40': var(--primary-colour),
+  '30': rgba(var(--primary-colour), .75),
+  '20': rgba(var(--primary-colour), .5),
+  '10': rgba(var(--primary-colour), .25)
+);
+
+$secondary-colors: (
+  '40': var(--secondary-colour),
+  '30': rgba(var(--secondary-colour), .75),
+  '20': rgba(var(--secondary-colour), .5),
+  '10': rgba(var(--secondary-colour), .25)
+);
+
+$text-colors: (
+  '40': var(--text-colour),
+  '30': rgba(var(--text-colour), .75),
+  '20': rgba(var(--text-colour), .5),
+  '10': rgba(var(--text-colour), .25)
+);
+
+$grey: #fafbfc;
+$greys: (
+  '40': $grey,
+  '30': #f1f5f7,
+  '20': #f5f7f9,
+  '10': #fafbfc
+);
+
+$dark: #271e1d;
+$darks: (
+  '40': $dark,
+  '30': #4a4442,
+  '20': #868180,
+  '10': #c2c0c0
+);
+

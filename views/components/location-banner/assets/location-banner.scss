@@ -1,0 +1,12 @@
+.location-banner {
+  margin-bottom: 8rem;
+
+  .location-banner__title { color: var(--text-colour-20); }
+
+  .location-banner__meta-info--phone-numbers {
+    display: flex;
+    justify-content: flex-start;
+
+    .location-banner__tel-number { margin-right: 4rem; }
+  }
+}
